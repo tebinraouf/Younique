@@ -1,0 +1,284 @@
+/*
+
+	Name: Unique Style CSS;
+	Table
+	12 - General Style
+	31 - Main Title
+	47 - Header and Footer
+	54 - Navigation
+	75 - Manage Admin Style
+	96 - Manage Content Style
+	109 - Edit Delete Style
+	123 - All Quote Style
+	132 - Heart
+	175 - Public Style
+	202 - Footer 
+
+
+*/
+
+
+/*General Style*/
+body{
+	background-color: #BB251C;
+}
+p,h1,h2,h3,h4{
+	margin:0px;
+	padding:10px;
+}
+form{
+	padding: 10px;
+}
+#wrapper{
+	margin: auto;
+	padding: 0px;
+	width: 960px;
+	position: relative;	
+}
+
+/* Main Title */
+
+#title{
+	font-size: 3em;
+	color: white;
+	text-align: center;
+}
+
+/*Header and Footer*/
+
+#header,#footer{
+	background-color: #e6a117;
+	height: 100px;
+}
+
+/* Navigation */
+
+#nav{
+	background-color: #DA5E66;
+	height: 20px;
+}
+#nav ul{
+	margin: 0;
+	padding: 0;
+	text-align:center;
+}
+#nav li{
+	display: inline;
+	list-style-type: none;
+		
+}
+#nav li a,a{
+	text-decoration:none;
+	color:#FFFFFF;
+}
+
+/* Manage Admin Style */
+
+#adminTable{
+	padding:10px;
+	padding-left: 50px;
+	text-align: center;
+}
+#adminTable th{
+	text-decoration: underline;
+}
+.actions{
+	padding-left: 50px;
+}
+.actions>a:hover , #createAdmin>a:hover{
+	color:red;
+}
+#createAdmin{
+	padding-left: 100px;
+}
+
+
+/*Manage Content Style*/
+
+#content{
+	color:#FFFFFF;
+	background-color:#91A792;
+	border-radius: 0px 92px 0px 92px;
+	-moz-border-radius: 0px 92px 0px 92px;
+	-webkit-border-radius: 0px 92px 0px 92px;
+	border: 0px solid #000000;
+	padding: 10px;	
+}
+
+/* Edit Delete Style */
+
+.editDelete{
+	background-color: #e6a117;
+	border-radius: 103px 103px 103px 103px;
+	-moz-border-radius: 103px 103px 103px 103px;
+	-webkit-border-radius: 103px 103px 103px 103px;
+	border: 0px solid #000000;
+	text-align: center;
+	padding: 5px;
+	margin: 5px;
+}
+
+/* All Quote Style */
+
+#allQuoteList{
+	padding: 5px;
+	margin: 5px;
+	list-style-type: none;
+	line-height: 1.8em;
+}
+
+/* Heart */
+
+.heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+}
+.heart:before,
+.heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: rgb(250,250,219);
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+.heart:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
+
+/*Public Style*/
+@font-face {
+    font-family: '1942_report1942_report';
+    src: url('fonts/1942-webfont.eot');
+    src: url('fonts/1942-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/1942-webfont.woff') format('woff'),
+         url('fonts/1942-webfont.ttf') format('truetype'),
+         url('fonts/1942-webfont.svg#1942_report1942_report') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#publicContent{
+	font-size: 3em;
+	padding-top: 15%;
+	text-align: center;
+	color: #FFFADB;
+	font-family:'1942_report1942_report','Times New Roman', Times, serif;
+}
+
+.quotationMark{
+
+}
+
+.quotationMark:before{
+	content: "\"";
+	font-family: '1942_report1942_report',"Times New Roman", Times, serif;
+}
+.quotationMark:after{
+	content: "\"";
+	font-family: '1942_report1942_report',"Times New Roman", Times, serif;
+}
+
+#author{
+	font-size: .5em;
+	color: #000000;
+	font-style:italic;
+	quotes: "&#34";
+
+}
+#author:before{
+	content: "~ ";
+}
+
+
+
+/* Footer */
+
+#publicHeader, #publicFooter {
+	background: #000000;
+	opacity:0.6;
+	filter:Alpha(opacity=60);  /*IE8 and earlier */
+	width: 100%;
+	position: fixed;
+	color: white;
+	margin-left: -10px;
+	font-size: 16px;
+	font-family: quoteFont;
+}
+
+#publicHeader{
+	top: 0px;
+	padding: 5px;
+	height:15px;
+	overflow:hidden;
+	transition-property:height;
+	transition-timing-function:ease-in;
+	transition-delay:.5s;
+	transition-duration:.7s;
+	-webkit-transition-property:height;
+	-webkit-transition-timing-function:ease-in;
+	-webkit-transition-delay:.5s;
+	-webkit-transition-duration:.7s;
+}
+
+#publicHeader:hover{
+	height:100px;
+	overflow:hidden;
+	transition-property:height;
+	transition-timing-function:ease-in;
+	transition-delay:.5s;
+	transition-duration:.7s;
+	-webkit-transition-property:height;
+	-webkit-transition-timing-function:ease-in;
+	-webkit-transition-delay:.5s;
+	-webkit-transition-duration:.7s;
+}
+
+#publicHeader #dropdownQuote{
+	text-align:center;
+	font-size:3em;
+	padding: 20px;
+}
+
+#publicHeader ul{
+	margin: 0;
+	padding: 0;	
+}
+#publicHeader ul li{
+	list-style-type: none;
+	display: inline;
+}
+
+#publicFooter{
+	bottom: 0px;
+	padding:5px;
+	text-align: center;
+}
+
+
+/*Test*/

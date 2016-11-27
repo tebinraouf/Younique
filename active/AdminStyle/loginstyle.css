@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/* CSS Document */
+/*Tebeen Muhamad Raoof
+Younique Login Page Style*/
+
+
+body, div, p, section, article, aside, nav, header, h1, h2, h3, h4, h5, h6 {
+	margin:0px;
+	padding:0px;
+}
+
+body{
+	background-color: #2A2C2B;
+}
+
+#wrapperLogin {
+	position:relative;
+	margin: auto;
+	width:400px;
+	background-color:#C33;
+	text-align:center;
+	line-height:40px;
+	color:#FFF;
+}
+
+header, footer{
+	padding:0px;
+	margin:0px;
+	background-color:#D9CB9E;
+}
+
+hgroup {
+
+	text-align:left;
+	padding: 5px;
+		
+}
+
+#tableFooter{
+	width: 400px;
+	border: 2px solid red;
+}
+
+img{
+	padding: 5px;
+}
+
+#info {
+	width: 100px;
+	height: 200px;
+	position:absolute;
+	left:400px;
+	display:none;
+	background-color:#D9CB9E;
+	border-radius: 0px 0px 30px 0px;
+	
+}
+
+
